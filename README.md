@@ -34,3 +34,12 @@ A backend-focused Airbnb clone built with **Django**, aiming to support user reg
 
 - **Project Manager**  
   Coordinates team activities, tracks progress, manages deadlines, and ensures alignment with project goals.  
+
+  ## Technology Stack
+- **Django**: Python web framework used to build scalable APIs and manage business logic.  
+- **PostgreSQL**: Relational database to store structured data like users, properties, and bookings.  
+- **GraphQL**: API query language enabling flexible data fetching for frontend clients.  
+- **Docker**: Containerization to provide consistent environments across development and production.  
+- **GitHub Actions**: Automation for CI/CD, including testing and deployment pipelines.  
+
+---
