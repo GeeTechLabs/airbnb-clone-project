@@ -65,3 +65,66 @@ Key entities and relationships:
 - **Payments**  
   - Fields: `id`, `booking_id`, `amount`, `status`, `payment_date`  
   - A payment is linked to a booking.  
+
+### Relationships
+- A **user** can own multiple **properties**.  
+- A **property** can have multiple **bookings** and **reviews**.  
+- A **booking** is linked to one **property** and one **user**.  
+- A **payment** is tied to one **booking**.  
+
+---
+
+## Feature Breakdown
+- **User Management**  
+  Authentication, profile management, role-based access (host/guest).  
+
+- **Property Management**  
+  Hosts can create, update, and delete property listings.  
+
+- **Booking System**  
+  Guests can search properties and make bookings with availability checks.  
+
+- **Review System**  
+  Guests can leave reviews and ratings on properties.  
+
+- **Payment Integration**  
+  Secure handling of payments linked to bookings.  
+
+- **Admin Dashboard**  
+  Superusers can manage users, properties, and bookings.  
+
+---
+
+## API Security
+### Key Measures
+- **Authentication**: JWT-based login system for secure sessions.  
+- **Authorization**: Role-based permissions (hosts vs. guests).  
+- **Data Validation**: Prevent malicious or invalid data entry.  
+- **Rate Limiting**: Protect APIs against abuse or denial-of-service attacks.  
+- **Secure Payments**: Encrypt and protect sensitive financial data.  
+
+### Why Security Matters
+- Protects **user data** (emails, passwords, personal info).  
+- Secures **financial transactions**.  
+- Prevents **unauthorized access** to system resources.  
+
+---
+
+## CI/CD Pipeline
+- **What it is**: CI/CD (Continuous Integration & Continuous Deployment) automates testing, building, and deploying code.  
+- **Why it’s important**: Ensures every code change is tested before merging, reduces bugs, and speeds up delivery.  
+- **Tools Used**:  
+  - **GitHub Actions** for automated testing and deployments.  
+  - **Docker** for containerization.  
+  - Optional: **Heroku / AWS / DigitalOcean** for production hosting.  
+
+---
+
+## Manual Review
+This README serves as the initial documentation for the Airbnb Clone Project.  
+Future updates will include detailed setup instructions, contribution guidelines, and API documentation.
+
+---
+
+## Repo
+**GitHub Repository**: [airbnb-clone-project](https://github.com/GeeTechLabs/airbnb-clone-project)  
