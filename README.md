@@ -43,3 +43,25 @@ A backend-focused Airbnb clone built with **Django**, aiming to support user reg
 - **GitHub Actions**: Automation for CI/CD, including testing and deployment pipelines.  
 
 ---
+## Database Design
+Key entities and relationships:
+
+- **Users**  
+  - Fields: `id`, `username`, `email`, `password`, `role`  
+  - A user can be a host (property owner) or a guest (renter).  
+
+- **Properties**  
+  - Fields: `id`, `title`, `description`, `location`, `price`, `host_id`  
+  - A property belongs to a host (user).  
+
+- **Bookings**  
+  - Fields: `id`, `user_id`, `property_id`, `check_in`, `check_out`, `status`  
+  - A booking is made by a user for a property.  
+
+- **Reviews**  
+  - Fields: `id`, `user_id`, `property_id`, `rating`, `comment`  
+  - A user can leave a review for a property they booked.  
+
+- **Payments**  
+  - Fields: `id`, `booking_id`, `amount`, `status`, `payment_date`  
+  - A payment is linked to a booking.  
